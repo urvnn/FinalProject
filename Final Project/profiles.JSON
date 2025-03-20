@@ -1,0 +1,8 @@
+{
+    "_id": "ObjectId('user_id123')",
+    "username": "john_doe",
+    "password": "hashed_password",
+    "email": "john@example.com",
+    "voted": false
+  }
+  

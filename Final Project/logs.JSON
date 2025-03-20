@@ -1,0 +1,7 @@
+{
+    "_id": "ObjectId('log_id123')",
+    "user_id": "ObjectId('user_id123')",
+    "action": "Voted",
+    "timestamp": "2025-03-20T12:30:45Z"
+  }
+  

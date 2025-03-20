@@ -1,0 +1,8 @@
+{
+    "_id": "ObjectId('vote_id123')",
+    "user_id": "ObjectId('user_id123')",
+    "election_id": "ObjectId('election_id123')",
+    "candidate_id": "ObjectId('candidate_id123')",
+    "timestamp": "2025-03-20T12:30:45Z"
+  }
+  
