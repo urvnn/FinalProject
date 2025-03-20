@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vote Now</title>
+</head>
+<body>
+    <h1>Welcome to the Voting System</h1>
+    {% if session.username %}
+        <p>Logged in as: {{ session.username }} | <a href="{{ url_for('logout') }}">Logout</a></p>
+        <h2>Vote for a Candidate</h2>
+        <form action="{{ url_for('vote') }}" method="POST">
+            {% for candidate in candidates %}
+                <input type="radio" name="candidate" value="{{ candidate }}" required> {{ candidate }} <br>
+            {% endfor %}
+            <button type="submit">Vote</button>
+        </form>
+        <a href="{{ url_for('results') }}">View Results</a>
+    {% else %}
+        <a href="{{ url_for('login') }}">Login</a> | <a href="{{ url_for('register') }}">Register</a>
+    {% endif %}
+</body>
+</html>
